@@ -29,7 +29,7 @@
 .bodypage {
   gap: 20px;
   box-sizing: border-box;
-  height: 1000px;
+  height: 80em;
   display: grid;
   border-radius: 20px;
   grid-template-columns: repeat(3, 1fr);
@@ -96,7 +96,8 @@ footer > button {
   font-size: clamp(0.6em, 1.5vw, 4em);
   width: 35%;
 }
-@media screen and (max-width: 750px) {
+/* Se suprime esta primera querie */
+/* @media screen and (max-width: 750px) {
   .bodypage {
     display: grid;
     gap: 10px;
@@ -141,20 +142,20 @@ footer > button {
     width: 100%;
     height: 100%;
   }
-}
-@media screen and (max-width: 450px) {
+} */
+@media screen and (max-width: 900px) {
   .bodypage {
     display: grid;
     background-size: cover;
     gap: 10px;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8, 1fr);
-    height: auto;
+    height: 250em;
   }
   .header {
     grid-column: 1/2;
     grid-row: 1/3;
-    font-size: clamp(0.6em, 1.8vw, 2em);
+    font-size: clamp(0.6em, 3vw, 2em);
   }
   .school {
     grid-column: 1/2;
@@ -167,6 +168,7 @@ footer > button {
   main {
     grid-column: 1/2;
     grid-row: 5/6;
+    font-size: clamp(0.6em, 4vw, 4em);
   }
   .time {
     grid-column: 1/2;
@@ -179,5 +181,10 @@ footer > button {
   footer {
     grid-column: 1/2;
     grid-row: 8/9;
+    font-size: clamp(0.6em, 5vw, 2em);
+  }
+  .item {
+    width: auto;
+    min-height: 205px;
   }
 }
